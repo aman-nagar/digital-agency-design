@@ -1,12 +1,16 @@
 <!-- includes/header.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Design</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <title>Digital Agency</title>
 </head>
+
 <body>
     <!-- announcement bar -->
     <div class="announcement wrapper">
@@ -35,7 +39,7 @@
         <div class="logo">
             <img src="/assets/images/logo.png" alt="" />
         </div>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="/about">about</a></li>
                 <li><a href="/services">services</a></li>
@@ -43,6 +47,9 @@
                 <li><a href="/blog">blog</a></li>
                 <li><a href="/contact">contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <!-- includes/header.php -->
+        <?php include 'includes/navigation.php'; ?>
+
         <button class="nav-btn">Free Quote</button>
     </header>
