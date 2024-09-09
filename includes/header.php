@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/scripts/animation.js"></script>
     <title>Digital Agency</title>
 </head>
 
@@ -37,18 +38,14 @@
 
     <header class="wrapper">
         <div class="logo">
-            <img src="/assets/images/logo.png" alt="" />
+            <img src="/assets/images/logo.png" alt="Digital Agency Logo" />
         </div>
-        <!-- <nav>
-            <ul>
-                <li><a href="/about">about</a></li>
-                <li><a href="/services">services</a></li>
-                <li><a href="/projects">projects</a></li>
-                <li><a href="/blog">blog</a></li>
-                <li><a href="/contact">contact</a></li>
-            </ul>
-        </nav> -->
-        <!-- includes/header.php -->
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
         <?php include 'includes/navigation.php'; ?>
 
         <button class="nav-btn">Free Quote</button>
