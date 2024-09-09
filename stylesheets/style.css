@@ -21,6 +21,7 @@
 /* Announcement Bar */
 .announcement {
   width: 100vw;
+  max-width: 100%;
   padding: 0 18%;
   display: flex;
   justify-content: space-between;
@@ -70,6 +71,7 @@ header {
   background-color: #fff;
   box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 0 18%;
+  max-width: 100%;
 }
 
 .logo img {
@@ -385,6 +387,9 @@ main .page-2 .learn-more:hover {
   main .hero {
     padding: 2% 2%;
   }
+  .hero-content {
+    width: 45%;
+  }
   .hero-content h1 {
     font-size: 40px;
     line-height: 40px;
@@ -395,6 +400,9 @@ main .page-2 .learn-more:hover {
   .hero-content button {
     padding: 13px 12px;
     font-size: 16px;
+  }
+  .hero .banner {
+    width: 45%;
   }
   main .page-2 {
     padding: 5% 5%;
