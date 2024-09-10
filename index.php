@@ -1,7 +1,7 @@
     <!-- index.php -->
     <?php include 'includes/header.php'; ?>
 
-    <main class=''>
+    <main class='wrapper'>
       <section class="hero">
         <div class="hero-content">
           <h3>DIGITAL MARKETING STRATEGY</h3>
