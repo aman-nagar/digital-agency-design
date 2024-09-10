@@ -78,7 +78,7 @@
         </svg>
 
         <div class="heading wrapper">
-          <p>SEARCH ENGINE & SOCIAL MEDIA OPTIMIZATIONn
+          <p>SEARCH ENGINE & SOCIAL MEDIA OPTIMIZATION
           </p>
           <h3>Full Service Digital Marketing Agency</h3>
         </div>
