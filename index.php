@@ -1,8 +1,8 @@
     <!-- index.php -->
     <?php include 'includes/header.php'; ?>
 
-    <main class='wrapper'>
-      <section class="hero">
+    <main class=''>
+      <section class="hero wrapper">
         <div class="hero-content">
           <h3>DIGITAL MARKETING STRATEGY</h3>
           <h1>We bring you new customers</h1>
@@ -19,7 +19,7 @@
           <img id="heroBanner" src="/assets/images/hero-image.png" alt="hero-image">
         </div>
       </section>
-      <section class="page-2 ">
+      <section class="page-2 wrapper">
         <div class="cards">
           <div class="card">
             <div class="image">
@@ -57,7 +57,7 @@
           </div>
         </div>
       </section>
-      <section class="page-3 ">
+      <section class="page-3 wrapper">
         <div class="lounch-img">
           <img src="/assets/images/launchproduct.png" alt="">
         </div>
@@ -71,5 +71,62 @@
             </a></button>
         </div>
       </section>
+
+      <section class="page-4">
+        <svg id="top-curve" style="fill: #fff;height:100px;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path class="divider-color" d="M1442,30.5019121 L1442,100.654403 L0,100.654403 C572.295431,33.9877365 935.145886,0.654403168 1088.55136,0.654403168 C1162.74657,0.654403168 1280.56278,10.6035728 1442,30.5019121 Z" id="top-curve" transform="translate(721.000000, 50.654403) scale(-1, -1) translate(-721.000000, -50.654403)"></path>
+        </svg>
+
+        <div class="heading wrapper">
+          <p>SEARCH ENGINE & SOCIAL MEDIA OPTIMIZATIONn
+          </p>
+          <h3>Full Service Digital Marketing Agency</h3>
+        </div>
+        <div class="cards wrapper">
+          <a href="#" class="card">
+            <div class="image">
+              <img src="/assets/images/social.png" alt="">
+            </div>
+            <div class="content">
+              <h4>Social Media Marketing</h4>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="image">
+              <img src="/assets/images/Organic.png" alt="">
+            </div>
+            <div class="content">
+              <h4>Organic Long-Term SEO</h4>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="image">
+              <img src="/assets/images/advanced-nalytics.png" alt="">
+
+            </div>
+            <div class="content">
+              <h4>Advanced Analytics</h4>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="image">
+              <img src="/assets/images/social-media.png" alt="">
+
+            </div>
+            <div class="content">
+              <h4>Social Media Marketing</h4>
+            </div>
+          </a>
+        </div>
+
+        <svg id="bottom-curve" style="fill: #fff; height:100px;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path class="divider-color" d="M1442,69.4980879 L1442,0.345597 L0,0.345597 C572.295431,66.0122635 935.145886,99.3455968 1088.55136,99.3455968 C1162.74657,99.3455968 1280.56278,89.3964272 1442,69.4980879 Z" id="hill-side-soft-off-bottom" transform="translate(721, 49.654403) scale(1, -1) translate(-721, -49.654403)"></path>
+        </svg>
+
+      </section>
+
+
+
+
     </main>
     <?php include 'includes/footer.php'; ?>
