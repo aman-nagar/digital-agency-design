@@ -1,12 +1,26 @@
 :root {
   --wrapper-padding: 0 18%;
+  --primary-font: "Roboto", Helvetica, Arial, sans-serif;
+  --primary-color: #878c9c;
+  --text-color: #fff;
+  --heading-color: rgb(65, 72, 77);
+  --button-bg: rgba(243, 118, 72, 1);
+  --button-bg-hover: #fb55a5;
+  /* Font Sizes */
+  --font-size-heading-lg: 64px;
+  --font-size-heading-md: 48px;
+  --font-size-heading-sm: 33px;
+  --font-size-body-lg: 20px;
+  --font-size-body-md: 18px;
+  --font-size-body-sm: 15px;
+  --font-size-body-xs: 13px;
 }
 
 /* Global Styles */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: var(--primary-font);
   box-sizing: border-box;
   list-style: none;
 }
@@ -32,14 +46,14 @@
   color: #878c9c;
 }
 
-.left,
-.right {
+.announcement .left,
+.announcement .right {
   display: flex;
   align-items: center;
   width: 50%;
 }
 
-.right {
+.announcement .right {
   gap: 7%;
   padding-left: 4%;
   justify-content: flex-end;
@@ -70,7 +84,6 @@ header {
   height: 107px;
   background-color: #fff;
   box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.1);
-  /* padding: 0 18%; */
   max-width: 100%;
 }
 
@@ -97,7 +110,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #514d60;
+  color: var(--heading-color);
   font-size: 15px;
   letter-spacing: 2px;
 }
@@ -132,7 +145,7 @@ main .hero {
 .hero-content {
   width: 50%;
   /* padding: 0 2%; */
-  color: rgb(65, 72, 77);
+  color: var(--heading-color);
 }
 .hero-content h3 {
   font-size: 18px;
@@ -141,7 +154,7 @@ main .hero {
   margin-bottom: 20px;
 }
 .hero-content h1 {
-  font-size: 64px;
+  font-size: var(--font-size-heading-lg);
   font-weight: 700;
   font-style: normal;
   line-height: 65px;
@@ -151,11 +164,10 @@ main .hero {
 .hero-content p {
   padding-top: 20px;
   font-size: 20px;
-  color: #8c9194;
+  color: var(--primary-color);
 }
 
 .hero-content button {
-  /* background-color: #f37648; */
   cursor: pointer;
   border-radius: 20px;
   padding: 18px 33px;
@@ -164,23 +176,22 @@ main .hero {
   font-weight: 400;
   outline: none;
   border: none;
-  background: rgba(243, 118, 72, 1);
+  background: var(--button-bg);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-
   margin-top: 50px;
 }
 
 .hero-content button a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: 600;
 }
 
 .hero-content button:hover {
-  background-color: #fb55a5;
+  background-color: var(--button-bg-hover);
   box-shadow: 0px 5px 14px 4px rgba(30, 10, 10, 0.16);
 }
 .hero-content .google-reviews {
@@ -257,12 +268,12 @@ main .page-2 .card-content h4 {
 main .page-2 .card-content p {
   font-size: 15px;
   line-height: 27px;
-  color: #666;
+  color: var(--primary-color);
   margin-bottom: 28px;
 }
 
 main .page-2 .learn-more {
-  color: #f98f2d;
+  color: var(--button-bg);
   border: none;
   padding: 15px 30px;
   border-radius: 25px;
@@ -276,12 +287,80 @@ main .page-2 .learn-more {
 }
 
 main .page-2 .learn-more:hover {
-  background-color: #f98f2d;
-  color: #fff;
+  background-color: var(--button-bg);
+  color: var(--text-color);
 }
 
 /* ------------  page-2  //     -------------- */
 
+/* ------------  page-3    -------------- */
+
+main .page-3 {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .page-3 .lounch-img {
+  width: 40%;
+}
+main .page-3 .lounch-img img {
+  width: 100%;
+}
+main .page-3 .content {
+  width: 50%;
+  display: flex;
+  gap: 0%;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 2%;
+}
+
+main .page-3 .content h3 {
+  font-size: var(--font-size-body-md);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: var(--text-sm);
+}
+main .page-3 .content h2 {
+  font-size: var(--font-size-heading-md);
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 27px;
+  padding-top: 5%;
+}
+main .page-3 .content p {
+  padding-top: 20px;
+  font-size: 20px;
+  color: var(--primary-color);
+  /* color: black; */
+}
+
+main .page-3 .content button {
+  width: fit-content;
+  background-color: var(--button-bg);
+  border-radius: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 8%;
+}
+
+main .page-3 .content button a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+main .page-3 .content button:hover {
+  background-color: var(--button-bg-hover);
+}
+/* ------------  page-3 //     -------------- */
 /* ------------  main  //     -------------- */
 
 /* ------------  footer     -------------- */
@@ -324,16 +403,7 @@ main .page-2 .learn-more:hover {
     font-size: 40px;
     padding: 2% 0%;
   }
-  .hero-content {
-    width: 100%;
-    padding: 0 19%;
-    color: rgb(65, 72, 77);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
+
   .hero-content h3 {
     font-size: 16px;
     line-height: 20px;
@@ -369,6 +439,30 @@ main .page-2 .learn-more:hover {
   }
   main .page-2 .card-content {
     margin-bottom: 0;
+  }
+  main .page-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .page-3 .lounch-img {
+    width: 90%;
+  }
+  main .page-3 .content {
+    width: 75%;
+  }
+  main .page-3 .content h3 {
+    font-size: var(--font-size-body-xs);
+  }
+  main .page-3 .content h2 {
+    font-size: var(--font-size-heading-sm);
+    line-height: 40px;
+  }
+  main .page-3 .content p {
+    font-size: var(--font-size-body-md);
+  }
+  main .page-3 .content button {
+    margin: 10% auto;
+    padding: 18px 13px;
   }
 }
 
@@ -444,6 +538,19 @@ main .page-2 .learn-more:hover {
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 5px;
+  }
+  main .page-3 .content h2 {
+    font-size: var(--font-size-heading-sm);
+    line-height: 40px;
+  }
+  main .page-3 .content h3 {
+    font-size: var(--font-size-body-xs);
+  }
+  main .page-3 .content p {
+    font-size: var(--font-size-body-md);
+  }
+  main .page-3 .content button a {
+    font-size: var(--font-size-body-lg);
   }
 }
 

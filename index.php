@@ -19,7 +19,7 @@
           <img id="heroBanner" src="/assets/images/hero-image.png" alt="hero-image">
         </div>
       </section>
-      <section class="page-2 wrapper">
+      <section class="page-2 ">
         <div class="cards">
           <div class="card">
             <div class="image">
@@ -57,6 +57,19 @@
           </div>
         </div>
       </section>
-
+      <section class="page-3 ">
+        <div class="lounch-img">
+          <img src="/assets/images/launchproduct.png" alt="">
+        </div>
+        <div class="content">
+          <h3>
+            GROW TRAFFIC & INCREASE REVENUE</h3>
+          <h2>Appear On the Front Page of Google!</h2>
+          <p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords.</p>
+          <button><a href="#">
+              Learn more about us
+            </a></button>
+        </div>
+      </section>
     </main>
     <?php include 'includes/footer.php'; ?>
