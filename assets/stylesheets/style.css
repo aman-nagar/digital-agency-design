@@ -24,7 +24,7 @@
   font-family: var(--primary-font);
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 /* Wrapper */
@@ -43,7 +43,6 @@ main .page-4 {
 .announcement {
   width: 100vw;
   max-width: 100%;
-  /* padding: 0 18%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,7 +153,6 @@ main .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 2% 0; */
 }
 .hero-content {
   width: 50%;
@@ -463,8 +461,33 @@ main .page-4 .cards .card .content {
   text-transform: uppercase;
   padding-bottom: 10%;
 }
-
 /* ------------  page-4 //     -------------- */
+/* ------------  content-block      -------------- */
+.content-block {
+  text-align: center;
+}
+.content-block .container {
+  padding: 2% 8%;
+}
+.content-block p {
+  font-size: var(--font-size-body-md);
+  margin-bottom: 20px;
+}
+.content-block h2 {
+  font-size: var(--font-size-heading-md);
+  line-height: 52px;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 27px;
+}
+
+.content-block .content {
+  font-size: var(--font-size-body-md);
+  margin-bottom: 20px;
+  opacity: 0.7;
+  line-height: 30px;
+}
+/* ------------  content-block //     -------------- */
 
 /* ------------  main  //     -------------- */
 
@@ -603,6 +626,19 @@ main .page-4 .cards .card .content {
     font-size: var(--font-size-heading-sm);
     line-height: 40px;
   }
+  .content-block .container {
+    padding: 2% 15%;
+  }
+  .content-block .container p {
+    font-size: var(--font-size-body-xs);
+  }
+  .content-block .container h2 {
+    font-size: var(--font-size-heading-sm);
+    line-height: 40px;
+  }
+  .content-block .container .content {
+    line-height: 25px;
+  }
 }
 
 /* Tablet (min-width: 768px and max-width: 991px) */
@@ -626,7 +662,6 @@ main .page-4 .cards .card .content {
   header {
     padding: 0 4%;
     height: 81px;
-    /* position: relative; */
   }
   .hamburger-icon {
     display: block;
@@ -637,11 +672,10 @@ main .page-4 .cards .card .content {
     display: none;
   }
   .nav-btn {
-    padding: 20px 15px;
+    padding: 15px;
   }
 
   main .hero {
-    /* padding: 2% 0; */
     justify-content: space-between;
   }
   .hero-content {
@@ -704,6 +738,21 @@ main .page-4 .cards .card .content {
   }
   main .page-4 .cards .card .content {
     font-size: var(--font-size-body-md);
+  }
+  .content-block .container {
+    /* padding: 2% 15%; */
+    text-align: left;
+  }
+  .content-block .container p {
+    font-size: var(--font-size-body-xs);
+  }
+  .content-block .container h2 {
+    font-size: var(--font-size-heading-sm);
+    line-height: 36px;
+  }
+  .content-block .container .content {
+    line-height: 25px;
+    font-size: var(--font-size-body-sm);
   }
 }
 

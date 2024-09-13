@@ -1,7 +1,31 @@
 <!-- includes/footer.php -->
-<footer>
-    <div class="wrapper">
-        <!-- <p>&copy; 2024 Your Local Digital Marketing Agency. All Rights Reserved.</p> -->
+<footer class=''>
+    <div class="contact-info wrapper">
+        <div class="content">
+            <p>With our theme, you no longer need to depend on predesigned footer layouts. Now, you can easily create your own with our intuitive drag & drop builder. Choose any columns variation, content element or color theme!</p>
+        </div>
+        <div class="contact">
+            <p class='phone'><a href="tel:+123456789011">+1 (234) 567.890.11</a></p>
+            <span class="hours"> MON–FRI 9AM–6PM</span>
+            <p class="email"> <span><i class="fa-regular fa-envelope"></i></span> <a href="mailto:sales@example.com">sales@example.com</a></p>
+        </div>
+        <div class="icons"></div>
+        <svg id="footer-curve" style="fill:#740dc3;height:60px;transform: scaleY(-1);width: 100%;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path class="footer-curve" d="M1442,33.8142136 C1280.56278,15.0410066 1162.74657,5.65440317 1088.55136,5.65440317 C935.145886,5.65440317 572.295431,37.1029354 3.86535248e-12,100 L0,0 L1442,0 L1442,33.8142136 Z" style="
+                scale: (1 ,-1);
+                /* transform: scaleY(-1); */">
+            </path>
+        </svg>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <a href='#' class="logo">
+            <img src="/assets/images/logo.png" alt="">
+        </a>
+        <div class="term">
+            <a>Privacy policy</a>
+            <a>Terms & Conditions</a>
+        </div>
     </div>
 </footer>
 </body>

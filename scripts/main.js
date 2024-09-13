@@ -1,3 +1,4 @@
+// sticky header /
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   if (window.scrollY > 0) {
@@ -6,3 +7,5 @@ window.addEventListener("scroll", function () {
     header.classList.remove("sticky");
   }
 });
+
+// sticky header  //

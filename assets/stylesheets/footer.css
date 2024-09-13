@@ -1,0 +1,63 @@
+/* assets\stylesheets\footer.css */
+
+footer {
+  background-color: #8a02f2;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+footer .contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0 10% 0;
+  gap: 1%;
+  position: relative;
+}
+footer .contact-info #footer-curve {
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -134%;
+  left: 0;
+}
+footer .contact-info .content {
+  width: 70%;
+  font-size: var(--font-size-body-lg);
+  line-height: 38px;
+  font-weight: 300;
+  opacity: 0.8;
+  padding-right: 15%;
+}
+
+footer .contact-info .contact {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* footer .contact-info .contact .email img {
+  width: 100%;
+} */
+footer .contact-info .contact .phone {
+  font-size: var(--font-size-heading-sm);
+}
+footer .contact-info .contact .email {
+  font-size: var(--font-size-body-lg);
+  padding: 14px;
+}
+
+footer .copyright {
+  background-color: #740dc3;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
