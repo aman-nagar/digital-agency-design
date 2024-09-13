@@ -394,6 +394,7 @@ main .page-4 #bottom-curve {
   bottom: -1px;
   position: absolute;
   width: 100%;
+  height: 60px;
 }
 main .page-4 .heading {
   padding: 2% 0;
@@ -418,6 +419,7 @@ main .page-4 .cards {
   display: flex;
   justify-content: space-between;
   gap: 2%;
+  padding-bottom: 2%;
 }
 
 main .page-4 .cards .card {
@@ -572,6 +574,28 @@ main .page-4 .cards .card .content {
     margin: 10% auto;
     padding: 18px 13px;
   }
+  main .page-4 .cards {
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .page-4 .cards .card {
+    width: 70%;
+    margin-bottom: 15%;
+  }
+  main .page-4 .cards .card .content {
+    font-size: var(--font-size-body-md);
+  }
+  main .page-4 .heading {
+    padding: 33% 5% 15% 5%;
+  }
+  main .page-4 .heading p {
+    font-size: var(--font-size-body-md);
+  }
+  main .page-4 .heading h3 {
+    font-size: var(--font-size-heading-sm);
+    line-height: 40px;
+  }
 }
 
 /* Tablet (min-width: 768px and max-width: 991px) */
@@ -660,9 +684,13 @@ main .page-4 .cards .card .content {
   }
   main .page-4 .heading p {
     font-size: 16px;
+    padding-top: 10%;
   }
   main .page-4 .heading h3 {
     font-size: var(--font-size-heading-sm);
+  }
+  main .page-4 .cards {
+    margin-bottom: 5%;
   }
   main .page-4 .cards .card {
     padding: 16px;
