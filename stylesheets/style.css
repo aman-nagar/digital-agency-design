@@ -1,5 +1,5 @@
 :root {
-  --wrapper-padding: 0 18%;
+  --wrapper-padding: 0 10vw;
   --primary-font: "Roboto", Helvetica, Arial, sans-serif;
   --primary-color: #878c9c;
   --text-color: #fff;
@@ -237,6 +237,9 @@ main .page-2 .cards {
   overflow: hidden;
   margin-bottom: 20px;
 }
+main .page-2 .cards:hover {
+  box-shadow: 0px 3px 40px 1px rgba(62, 87, 100, 0.29);
+}
 
 main .page-2 .card {
   display: flex;
@@ -247,7 +250,6 @@ main .page-2 .card {
   height: 100%;
   box-sizing: border-box;
 }
-
 main .page-2 .image {
   max-width: 220px;
 }
@@ -454,6 +456,7 @@ main .page-4 .cards .card .content {
 }
 
 /* ------------  page-4 //     -------------- */
+
 /* ------------  main  //     -------------- */
 
 /* ------------  footer     -------------- */
@@ -654,6 +657,18 @@ main .page-4 .cards .card .content {
   }
   main .page-3 .content button a {
     font-size: var(--font-size-body-lg);
+  }
+  main .page-4 .heading p {
+    font-size: 16px;
+  }
+  main .page-4 .heading h3 {
+    font-size: var(--font-size-heading-sm);
+  }
+  main .page-4 .cards .card {
+    padding: 16px;
+  }
+  main .page-4 .cards .card .content {
+    font-size: var(--font-size-body-md);
   }
 }
 
