@@ -1,5 +1,5 @@
 :root {
-  --wrapper-padding: 0 10vw;
+  --wrapper-padding: 0 6vw;
   --primary-font: "Roboto", Helvetica, Arial, sans-serif;
   --primary-color: #878c9c;
   --text-color: #fff;
@@ -92,6 +92,13 @@ header {
   background-color: #fff;
   box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.1);
   max-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: height 0.3s ease;
+}
+header.sticky {
+  height: 60px;
 }
 
 .logo img {
@@ -619,7 +626,7 @@ main .page-4 .cards .card .content {
   header {
     padding: 0 4%;
     height: 81px;
-    position: relative;
+    /* position: relative; */
   }
   .hamburger-icon {
     display: block;

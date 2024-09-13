@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <script src="/scripts/animation.js"></script>
+    <script src="/scripts/main.js"></script>
     <title>Digital Agency</title>
 </head>
 
@@ -50,3 +51,5 @@
 
         <button class="nav-btn">Free Quote</button>
     </header>
+
+ 
