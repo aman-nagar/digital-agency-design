@@ -119,10 +119,9 @@
           </a>
         </div>
 
-        <svg id="bottom-curve" style="fill: #fff; height:100px;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path class="divider-color" d="M1442,69.4980879 L1442,0.345597 L0,0.345597 C572.295431,66.0122635 935.145886,99.3455968 1088.55136,99.3455968 C1162.74657,99.3455968 1280.56278,89.3964272 1442,69.4980879 Z" id="hill-side-soft-off-bottom" transform="translate(721, 49.654403) scale(1, -1) translate(-721, -49.654403)"></path>
+        <svg id="bottom-curve" style="fill: #fff; " preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path class="divider-color" d="M1442,33.4980879 L1442,0.345597 L0,0.345597 C572.295431,66.0122635 935.145886,99.3455968 1088.55136,99.3455968 C1162.74657,99.3455968 1280.56278,89.3964272 1442,69.4980879 Z" id="hill-side-soft-off-bottom" transform="translate(721, 49.654403) scale(1, -1) translate(-721, -49.654403)"></path>
         </svg>
-
       </section>
 
 
