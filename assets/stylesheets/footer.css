@@ -14,14 +14,6 @@ footer .contact-info {
   justify-content: space-between;
   margin: 5% 0 10% 0;
   gap: 1%;
-  position: relative;
-}
-footer .contact-info #footer-curve {
-  max-width: 100%;
-  overflow: hidden;
-  position: absolute;
-  bottom: -100%;
-  left: 0;
 }
 footer .contact-info .content {
   width: 70%;
@@ -90,9 +82,6 @@ footer .copyright p {
 }
 
 @media (max-width: 767px) {
-  footer .contact-info #footer-curve {
-    bottom: -11%;
-  }
   footer .contact-info {
     flex-direction: column;
     align-items: center;
@@ -123,14 +112,11 @@ footer .copyright p {
   }
   footer .contact-info .contact .phone {
     font-size: 23px;
-    /* line-height: 25px; */
   }
   footer .contact-info .contact .email {
     font-size: var(--font-size-body-md);
   }
-  footer .contact-info #footer-curve {
-    bottom: -43%;
-  }
+
   footer .contact-info .contact .social-media-icons {
     width: 87%;
   }

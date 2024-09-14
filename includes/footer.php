@@ -16,13 +16,13 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <svg id="footer-curve" style="fill:#740dc3;height:60px;transform: scaleY(-1);width: 100%;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path class="footer-curve" d="M1442,33.8142136 C1280.56278,15.0410066 1162.74657,5.65440317 1088.55136,5.65440317 C935.145886,5.65440317 572.295431,37.1029354 3.86535248e-12,100 L0,0 L1442,0 L1442,33.8142136 Z" style="
-                scale: (1 ,-1);
-                /* transform: scaleY(-1); */">
-            </path>
-        </svg>
     </div>
+    <svg id="footer-curve" style="fill:#740dc3;height:60px;transform: scaleY(-1);width: 100%;" preserveAspectRatio="none" viewBox="0 0 1442 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path class="footer-curve" d="M1442,33.8142136 C1280.56278,15.0410066 1162.74657,5.65440317 1088.55136,5.65440317 C935.145886,5.65440317 572.295431,37.1029354 3.86535248e-12,100 L0,0 L1442,0 L1442,33.8142136 Z" style="
+            scale: (1 ,-1);
+            /* transform: scaleY(-1); */">
+        </path>
+    </svg>
     <div class="copyright">
         <p>&copy; 2024 Digital Agency. All rights reserved.</p>
         <a href='#' class="logo">
