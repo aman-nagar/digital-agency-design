@@ -129,6 +129,32 @@
           $sectionContent = "We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords.";
           include 'includes/sections/section_content_block.php';
         ?>
+        <?php
+        $sectionImage1="/assets/images/target.png";
+        $sectionHeading1="Local Search Strategy";
+        $sectionLink1="/#";
+        $sectionContent1="Maximize your presence on search engine results pages on a local scale.";
+        $sectionImage2="/assets/images/globe.png";
+        $sectionHeading2="MAp Search Optimization";
+        $sectionContent2="Google Maps Optimization is an important part for your local marketing strategy.";
+        $sectionImage3="/assets/images/settings.png";
+        $sectionHeading3="Link Building & Content";
+        $sectionContent3="Link building is a tremendously important component of Search Engine Optimization.";
+        include 'includes/sections/service_offerings_section.php';
+        ?>
+        <?php
+        $sectionImage1="/assets/images/coin.png";
+        $sectionHeading1="Paid Search Advertising";
+        $sectionLink1="/#";
+        $sectionContent1="Paid listings on Google AdWords can help you reach new customers.";
+        $sectionImage2="/assets/images/notebook.png";
+        $sectionHeading2="Custom Website Design";
+        $sectionContent2="Our team specializes in affordable web design and e-commerce.";
+        $sectionImage3="/assets/images/mail.png";
+        $sectionHeading3="Email Campaign Design";
+        $sectionContent3="Custom email templates that speak to your customers and resonate with your brand.";
+        include 'includes/sections/service_offerings_section.php';
+        ?>
 
       </main>
       <?php include 'includes/footer.php'; ?>
