@@ -3,6 +3,7 @@
   --primary-font: "Roboto", Helvetica, Arial, sans-serif;
   --primary-color: #878c9c;
   --text-color: #fff;
+  --text-black: #000;
   --bg-blue-color: #8878e9;
   --heading-color: rgb(65, 72, 77);
   --button-bg: rgba(243, 118, 72, 1);
@@ -24,7 +25,7 @@
   font-family: var(--primary-font);
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /* Wrapper */
@@ -488,6 +489,36 @@ main .page-4 .cards .card .content {
   line-height: 30px;
 }
 /* ------------  content-block //     -------------- */
+/* service_offerings_section */
+.service-offering .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0 5% 0;
+}
+.service-offering .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+.service-offering .container .card img {
+  max-width: 70px;
+}
+.service-offering .container .card a {
+}
+.service-offering .container .card h3 {
+  font-size: var(--font-size-body-md);
+  font-weight: 500;
+  color: var(--text-black);
+  padding: 8% 0 3% 0;
+  text-transform: uppercase;
+}
+.service-offering .container .card .content {
+  font-size: var(--font-size-body-sm);
+  opacity: 0.7;
+}
+
+/* service_offerings_section //   */
 
 /* ------------  main  //     -------------- */
 
@@ -639,6 +670,18 @@ main .page-4 .cards .card .content {
   .content-block .container .content {
     line-height: 25px;
   }
+
+  /* service_offerings_section */
+  .service-offering .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9%;
+  }
+  .service-offering .container .card {
+    width: 100%;
+    padding: 5% 0;
+  }
+  /* service_offerings_section //   */
 }
 
 /* Tablet (min-width: 768px and max-width: 991px) */
@@ -754,6 +797,9 @@ main .page-4 .cards .card .content {
     line-height: 25px;
     font-size: var(--font-size-body-sm);
   }
+  /* service_offerings_section */
+
+  /* service_offerings_section //   */
 }
 
 /* Desktop (min-width: 992px and max-width: 1199px) */
