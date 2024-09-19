@@ -56,3 +56,45 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+// multi-tab on service page
+
+document.querySelectorAll(".tab-name").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove active class from all tabs and contents
+    document
+      .querySelectorAll(".tab-name")
+      .forEach((item) => item.classList.remove("active"));
+    document
+      .querySelectorAll(".content")
+      .forEach((content) => content.classList.remove("active"));
+
+    // Add active class to the clicked tab
+    tab.classList.add("active");
+
+    // Show the corresponding content
+    const tabId = tab.getAttribute("data-tab");
+    const activeContent = document.getElementById(tabId);
+    activeContent.classList.add("active");
+  });
+});
+
+// FAQ ///
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+    document.querySelectorAll(".faq-answer").forEach((el) => {
+      el.style.maxHeight = null;
+      el.previousElementSibling.setAttribute("aria-expanded", "false");
+      el.setAttribute("aria-hidden", "true");
+    });
+
+    if (!isExpanded) {
+      button.setAttribute("aria-expanded", "true");
+      answer.setAttribute("aria-hidden", "false");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});

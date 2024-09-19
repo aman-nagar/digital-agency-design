@@ -32,7 +32,6 @@
 .wrapper {
   padding: var(--wrapper-padding);
 }
-header,
 main .page-2,
 main .page-3,
 main .page-4,
@@ -137,6 +136,50 @@ nav a:hover {
   color: rgb(230, 153, 193);
 }
 
+nav .submenu {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%, -15px);
+  min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #fff;
+  transition: opacity 0.5s ease, visibility 0.3s ease;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  gap: 0;
+}
+
+/* Show submenu on hover */
+nav ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styling for submenu links */
+nav .submenu li {
+  padding: 10px 20px;
+}
+
+nav .submenu li a {
+  font-size: 14px;
+  text-transform: none;
+  color: var(--heading-color);
+}
+
+nav .submenu li a:hover {
+  /* background-color: rgba(230, 153, 193, 0.1); */
+  color: rgb(230, 153, 193);
+  border-radius: 5px;
+}
+
 .nav-btn {
   background-color: rgb(140, 88, 213);
   border-radius: 14px;
@@ -224,7 +267,7 @@ main .hero {
   overflow: hidden;
 }
 
-.banner img {
+.hero .banner img {
   max-width: 100%;
   padding-top: 10px;
   scale: 1.3;
