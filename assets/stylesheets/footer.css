@@ -10,18 +10,22 @@ footer {
   color: var(--text-color);
 }
 footer .contact-info {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 5% 0 10% 0;
   gap: 1%;
 }
 footer .contact-info .content {
-  width: 70%;
+  width: 60%;
   font-size: var(--font-size-body-lg);
   line-height: 38px;
   font-weight: 300;
   opacity: 0.8;
   padding-right: 15%;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 footer .contact-info .contact {

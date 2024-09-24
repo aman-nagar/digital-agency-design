@@ -22,5 +22,5 @@
             </a>
             <p class='content'><?php echo $sectionContent3; ?></p>
         </div>
-        </div>
-    </section>
+    </div>
+</section>

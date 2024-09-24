@@ -10,6 +10,30 @@ window.addEventListener("scroll", function () {
 
 // sticky header  //
 
+// menu
+
+function toggleNav() {
+  const nav = document.querySelector(".main-menu");
+  nav.classList.toggle("active");
+}
+
+function closeNav() {
+  const nav = document.querySelector(".main-menu");
+  nav.classList.remove("active");
+}
+
+const menuItems = document.querySelectorAll(".main-menu li a");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    const submenu = item.nextElementSibling;
+    if (submenu && submenu.classList.contains("submenu")) {
+      e.preventDefault(); // Prevent anchor link from navigating
+      item.parentElement.classList.toggle("active");
+    }
+  });
+});
+
 // testimonia slider
 document.addEventListener("DOMContentLoaded", function () {
   // Swiper configuration for .brands (Single slide at all breakpoints)
@@ -97,4 +121,35 @@ document.querySelectorAll(".faq-question").forEach((button) => {
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });
+});
+
+// ---------------------About-us-owl-carousel---------------------
+var owl = $(".owl-carousel");
+owl.owlCarousel({
+  items: 4,
+  loop: true,
+  // margin:10,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  // autoplayHoverPause:true
+  responsive: {
+    0: {
+      items: 2,
+      nav: true,
+    },
+    480: {
+      items: 2,
+      nav: false,
+    },
+    768: {
+      items: 3,
+      nav: true,
+      loop: false,
+    },
+    1024: {
+      items: 6,
+      nav: true,
+      loop: false,
+    },
+  },
 });

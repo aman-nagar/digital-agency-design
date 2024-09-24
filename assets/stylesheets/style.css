@@ -108,17 +108,27 @@ header.sticky {
   width: 240px;
 }
 
+/* Hamburger Icon for Mobile */
+
 .hamburger-icon {
   display: none;
-  width: 25px;
+  width: 30px;
   font-size: 25px;
+  cursor: pointer;
 }
+
 /* Main Menu */
+nav .nav-img {
+  display: none;
+}
 nav ul {
   display: flex;
   gap: 20px;
   text-transform: uppercase;
   position: relative;
+}
+nav ul .close-icon {
+  display: none;
 }
 
 nav ul li {
@@ -136,50 +146,50 @@ nav a:hover {
   color: rgb(230, 153, 193);
 }
 
+/* Submenu */
 nav .submenu {
-  width: 18vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 40px;
-  transform: translate(-50%, -15px);
-  min-width: 200px;
+  /* display: none; */
   visibility: hidden;
   opacity: 0;
+  max-height: 0;
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 10px;
   background-color: #fff;
-  transition: opacity 0.5s ease, visibility 0.3s ease;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  gap: 0;
+  transition: opacity 0.5s ease, visibility 0.3s ease, max-height 0.3s ease;
+  overflow: hidden;
+  /* border: 0px  solid #ccc; */
+  top: 72px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  width: 360px;
 }
-
-/* Show submenu on hover */
-nav ul li:hover .submenu {
+nav ul li:hover .submenu,
+nav ul li.active .submenu {
   visibility: visible;
   opacity: 1;
+  max-height: 320px; /* Adjust this to fit your submenu size */
 }
 
-/* Styling for submenu links */
 nav .submenu li {
   padding: 10px 20px;
 }
 
 nav .submenu li a {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   color: var(--heading-color);
 }
 
 nav .submenu li a:hover {
-  /* background-color: rgba(230, 153, 193, 0.1); */
   color: rgb(230, 153, 193);
   border-radius: 5px;
 }
 
+/* Nav button styling */
 .nav-btn {
   background-color: rgb(140, 88, 213);
   border-radius: 14px;
@@ -190,6 +200,103 @@ nav .submenu li a:hover {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+/* Mobile Styles */
+/* Mobile Styles */
+@media (max-width: 1024px) {
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100; /* Ensure the icon is on top */
+  }
+
+  nav .nav-img {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0); /* Center the image */
+    display: block;
+    z-index: 50; /* Ensure the image is under the icon */
+  }
+
+  nav ul {
+    z-index: 100;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially off-screen */
+    background-color: #8577e6;
+    width: 300px;
+    height: 100vh; /* Full viewport height */
+    visibility: hidden;
+    opacity: 0;
+    transition: right 0.5s ease, opacity 0.5s ease;
+    overflow-y: auto;
+    padding: 0; /* Remove padding from the menu */
+    gap: 0; /* Remove gap between items */
+  }
+
+  /* Open state */
+  nav ul.active {
+    visibility: visible;
+    opacity: 1;
+    right: 0; /* Slide the menu in from the right */
+  }
+
+  /* Close icon */
+  nav ul .close-icon {
+    display: block;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 8px 10px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+  }
+
+  /* Menu Links */
+  nav ul .menu {
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 8%;
+  }
+
+  nav ul li a {
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  nav ul .menu:nth-child(3) {
+    margin-top: 90px;
+  }
+  /* Submenu */
+  nav .submenu {
+    width: 100%;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    width: 280px;
+    background-color: #8577e6;
+    position: relative;
+    padding: 0;
+  }
+  nav .submenu li a {
+    color: white;
+  }
+
+  nav ul li.active .submenu {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    padding-bottom: 10px;
+  }
 }
 
 /* ------------  header  //   -------------- */
@@ -768,12 +875,7 @@ main .page-4 .cards .card .content {
     padding: 35px 17px;
     justify-content: space-around;
   }
-  .hamburger-icon {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
+
   .nav-btn {
     display: none;
   }
@@ -983,9 +1085,7 @@ main .page-4 .cards .card .content {
     position: absolute;
     right: 25%;
   }
-  nav {
-    display: none;
-  }
+
   .nav-btn {
     padding: 15px;
   }

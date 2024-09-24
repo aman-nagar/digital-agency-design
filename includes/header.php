@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/assets/stylesheets/footer.css" />
     <link rel="stylesheet" href="/assets/stylesheets/services.css" />
     <link rel="stylesheet" href="/assets/stylesheets/contact-us.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/about-us.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/owl-carousel.css" />
+    <script src="/scripts/jquery.js" defer></script>
+    <script src="/scripts/owl-carousel.js" defer></script>
     <script src="/scripts/animation.js" defer></script>
     <script src="/scripts/main.js" defer></script>
     <title>Digital Agency</title>
