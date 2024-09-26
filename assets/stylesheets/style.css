@@ -191,7 +191,8 @@ nav .submenu li a:hover {
 
 /* Nav button styling */
 .nav-btn {
-  background-color: rgb(140, 88, 213);
+  /* background-color: rgb(140, 88, 213); */
+  background-color: var(--bg-blue-color);
   border-radius: 14px;
   padding: 15px 19px;
   color: #fff;
@@ -208,9 +209,10 @@ nav .submenu li a:hover {
   .hamburger-icon {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 50%;
     right: 20px;
     z-index: 100; /* Ensure the icon is on top */
+    transform: translate(0%, -50%);
   }
 
   nav .nav-img {
@@ -294,7 +296,6 @@ nav .submenu li a:hover {
   nav ul li.active .submenu {
     visibility: visible;
     opacity: 1;
-    max-height: 500px;
     padding-bottom: 10px;
   }
 }
@@ -839,12 +840,7 @@ main .page-4 .cards .card .content {
 }
 
 /* our-case-studies //   */
-
 /* ------------  main  //     -------------- */
-
-/* ------------  footer     -------------- */
-
-/* ------------  footer    //     -------------- */
 
 /* Mobile (max-width: 767px) */
 @media (max-width: 767px) {
@@ -1177,6 +1173,12 @@ main .page-4 .cards .card .content {
     overflow: unset;
   }
   /* our-case-studies  // */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hamburger-icon {
+    right: 22%;
+  }
 }
 
 /* Desktop (min-width: 992px and max-width: 1199px) */

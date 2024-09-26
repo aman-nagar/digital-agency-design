@@ -11,15 +11,18 @@ window.addEventListener("scroll", function () {
 // sticky header  //
 
 // menu
-
 function toggleNav() {
-  const nav = document.querySelector(".main-menu");
-  nav.classList.toggle("active");
+  if (window.innerWidth <= 1024) {
+    const nav = document.querySelector(".main-menu");
+    nav.classList.toggle("active");
+  }
 }
 
 function closeNav() {
-  const nav = document.querySelector(".main-menu");
-  nav.classList.remove("active");
+  if (window.innerWidth <= 1024) {
+    const nav = document.querySelector(".main-menu");
+    nav.classList.remove("active");
+  }
 }
 
 const menuItems = document.querySelectorAll(".main-menu li a");
@@ -27,11 +30,22 @@ const menuItems = document.querySelectorAll(".main-menu li a");
 menuItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     const submenu = item.nextElementSibling;
-    if (submenu && submenu.classList.contains("submenu")) {
+    if (
+      window.innerWidth <= 1024 &&
+      submenu &&
+      submenu.classList.contains("submenu")
+    ) {
       e.preventDefault(); // Prevent anchor link from navigating
       item.parentElement.classList.toggle("active");
     }
   });
+});
+
+window.addEventListener("resize", () => {
+  // Optional: Close the menu if resizing above 1024px
+  if (window.innerWidth > 1024) {
+    closeNav();
+  }
 });
 
 // testimonia slider
@@ -82,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // multi-tab on service page
-
 document.querySelectorAll(".tab-name").forEach((tab) => {
   tab.addEventListener("click", () => {
     // Remove active class from all tabs and contents

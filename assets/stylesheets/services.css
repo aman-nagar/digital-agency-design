@@ -174,12 +174,14 @@ main.service-page .seo-services .card .content p {
 }
 
 #multi-tab .tab-container .tab-name {
-  padding: 20px 5%;
+  /* padding: 20px 5%; */
+  padding: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
 }
 .tab-name.active {
   color: #fff;
@@ -192,7 +194,7 @@ main.service-page .seo-services .card .content p {
   padding: 20px;
   border-radius: 50px 0 0 50px;
   position: relative;
-  min-width: 256px;
+  width: calc(100% + 30px);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -287,8 +289,7 @@ main.service-page .card p {
 }
 
 /* FAQ  */
-.faq {
-}
+
 .faq h2 {
   margin-bottom: 15px;
 }
@@ -335,6 +336,21 @@ button[aria-expanded="true"] .icon {
   margin-top: 10px;
 }
 
+/* @media (max-width: 376px) {
+  #multi-tab .tab-name.active {
+    min-width: 296px;
+  }
+} */
+/* @media (max-width: 326px) {
+  #multi-tab .tab-name.active {
+    min-width: 248px;
+  }
+} */
+/* @media (max-width: 768px) {
+  .tab-name.active {
+    min-width: 190px;
+  }
+} */
 /* media query */
 @media (max-width: 767px) {
   main.service-page .banner-content {
@@ -394,9 +410,9 @@ button[aria-expanded="true"] .icon {
     flex-direction: column;
     padding: 0 7%;
   }
-  .tab-name.active {
+  /* .tab-name.active {
     min-width: 325px;
-  }
+  } */
   #multi-tab .tab-container .tab-name.active::after {
     content: "";
     width: 18px;
@@ -414,7 +430,7 @@ button[aria-expanded="true"] .icon {
 
   #multi-tab .tab-container .tab-name {
     justify-content: flex-start;
-    padding: 15px;
+    /* padding: 15px; */
   }
 
   #multi-tab .tab-container .tab-name img {
@@ -473,6 +489,7 @@ button[aria-expanded="true"] .icon {
     padding: 10px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   main.service-page .seo-services .seo-cards {
     gap: 0;
